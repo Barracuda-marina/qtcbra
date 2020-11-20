@@ -1,3 +1,3 @@
 # QTCBRA
 
-Qt version of BRA"# qtcbra" 
+Qt version of BRA for DCS World
