@@ -46,6 +46,14 @@
 **
 ** $QT_END_LICENSE$
 **
+****************************************************************************
+**                                                                        **
+**   Project qtcbra - maih.cpp                                            **
+**      Qt creator ver. 5.15  variant of interceptor - bandit course -    **
+**      distance - altitude computation from AWACS or EWR data            **
+**      for DCS World                                                     **
+**                                      Barracuda-marina 2020             **
+**                                                                        **
 ****************************************************************************/
 
 #include "calculatorform.h"
