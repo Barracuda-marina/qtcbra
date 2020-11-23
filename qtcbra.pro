@@ -9,3 +9,6 @@ FORMS = calculatorform.ui
 target.path = $$[QT_INSTALL_EXAMPLES]/uitools/multipleinheritance
 INSTALLS += target
 
+RESOURCES += \
+    BRA.qrc
+

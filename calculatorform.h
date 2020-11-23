@@ -64,8 +64,12 @@ public:
     explicit CalculatorForm(QWidget *parent = nullptr);
 
 private slots:
-    void on_inputSpinBox1_valueChanged(int value);
-    void on_inputSpinBox2_valueChanged(int value);
+    void on_inputSpinBox_Intercept_Dist_BE_valueChanged(int value);
+    void on_inputSpinBox_Intercept_Course_BE_valueChanged(int value);
+    void on_inputSpinBox_Bandit_Bear_BE_valueChanged(int value);
+    void on_inputSpinBox_Bandit_Dist_BE_valueChanged(int value);
+    void on_inputSpinBox_Bandit_Alt_valueChanged(int value);
+
 };
 //! [1]
 

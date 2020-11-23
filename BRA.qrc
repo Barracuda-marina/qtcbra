@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Interceptor.ico</file>
+        <file>Interceptor.png</file>
+    </qresource>
+</RCC>
