@@ -57,6 +57,7 @@
 ****************************************************************************/
 
 // It is working!!!
+// It is working again !!!!!!
 
 #include "calculatorform.h"
 #include <QApplication>
