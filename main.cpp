@@ -60,6 +60,7 @@
 // It is working again !!!!!!
 
 #include "calculatorform.h"
+#include "mathematic.h"
 #include <QApplication>
 
 //! [0]
