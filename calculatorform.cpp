@@ -61,36 +61,36 @@ CalculatorForm::CalculatorForm(QWidget *parent)
 //! [0]
 
 //! [1]
-void CalculatorForm::on_inputSpinBox_Intercept_Dist_BE_valueChanged(int value)
+void CalculatorForm::on_inputSpinBox_Intercept_Dist_BE_valueChanged(int value) //changed (value + inputSpinBox_Intercept_Dist_BE->value())) on (value - value + inputSpinBox_Intercept_Dist_BE->value()))
 {
-    Interceptor_Bandit_Distance->setText(QString::number(value + inputSpinBox_Intercept_Dist_BE->value()));
+    Interceptor_Bandit_Distance->setText(QString::number(value - value + inputSpinBox_Intercept_Dist_BE->value()));
 }
 //! [1]
 
 //! [2]
 void CalculatorForm::on_inputSpinBox_Intercept_Course_BE_valueChanged(int value)
 {
-    Interceptor_Bandit_Course->setText(QString::number(value + inputSpinBox_Intercept_Course_BE->value()));
+    Interceptor_Bandit_Course->setText(QString::number(value - value + inputSpinBox_Intercept_Course_BE->value()));
 }
 //! [2]
 
 //! [3]
 void CalculatorForm::on_inputSpinBox_Bandit_Bear_BE_valueChanged(int value)
 {
-    Interceptor_Bandit_Course->setText(QString::number(value + inputSpinBox_Bandit_Bear_BE->value()));
+    Interceptor_Bandit_Course->setText(QString::number(value - value + inputSpinBox_Bandit_Bear_BE->value()));
 }
 //! [3]
 
 //! [4]
 void CalculatorForm::on_inputSpinBox_Bandit_Dist_BE_valueChanged(int value)
 {
-    Interceptor_Bandit_Distance->setText(QString::number(value + inputSpinBox_Bandit_Dist_BE->value()));
+    Interceptor_Bandit_Distance->setText(QString::number(value - value + inputSpinBox_Bandit_Dist_BE->value()));
 }
 //! [4]
 
 //! [5]
 void CalculatorForm::on_inputSpinBox_Bandit_Alt_valueChanged(int value)
 {
-    Interceptor_Bandit_Altitude->setText(QString::number(value + inputSpinBox_Bandit_Alt->value()));
+    Interceptor_Bandit_Altitude->setText(QString::number(value - value + inputSpinBox_Bandit_Alt->value()));
 }
 //! [5]
