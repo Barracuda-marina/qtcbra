@@ -56,12 +56,11 @@
 **                                                                        **
 ****************************************************************************/
 
-// It is working!!!
-// It is working again !!!!!!
+// 8.12.2020
 
 #include "calculatorform.h"
-#include "mathematic.h"
 #include <QApplication>
+#include <cmath>
 
 //! [0]
 int main(int argc, char *argv[])

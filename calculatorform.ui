@@ -163,7 +163,7 @@
         <bool>true</bool>
        </property>
        <property name="inputMethodHints">
-        <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+        <set>Qt::ImhNone</set>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -178,14 +178,14 @@
       <widget class="QLabel" name="label_7">
        <property name="geometry">
         <rect>
-         <x>446</x>
+         <x>440</x>
          <y>70</y>
          <width>71</width>
          <height>23</height>
         </rect>
        </property>
        <property name="text">
-        <string>Course</string>
+        <string>Radial</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_8">
@@ -268,7 +268,7 @@
         <bool>true</bool>
        </property>
        <property name="inputMethodHints">
-        <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+        <set>Qt::ImhNone</set>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -287,7 +287,7 @@
         </rect>
        </property>
        <property name="inputMethodHints">
-        <set>Qt::ImhDigitsOnly</set>
+        <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
        </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
@@ -337,6 +337,9 @@
          <height>36</height>
         </rect>
        </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly|Qt::ImhSensitiveData</set>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -371,6 +374,9 @@
          <width>91</width>
          <height>36</height>
         </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
        </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>

@@ -49,8 +49,9 @@
 ****************************************************************************/
 
 #include "calculatorform.h"
+#include "mathematic.cpp"
 #include <QWidget>
-
+#include <cmath>
 
 //! [0]
 CalculatorForm::CalculatorForm(QWidget *parent)
@@ -70,21 +71,32 @@ void CalculatorForm::on_inputSpinBox_Intercept_Dist_BE_valueChanged(int value) /
 //! [2]
 void CalculatorForm::on_inputSpinBox_Intercept_Course_BE_valueChanged(int value)
 {
-    Interceptor_Bandit_Course->setText(QString::number(value - value + inputSpinBox_Intercept_Course_BE->value()));
+    interceptor_to_bullseye_course = value;
+
+//    Interceptor_Bandit_Course->setText(QString::number(Interceptor_Radial_counting ()));
+//    Interceptor_Bandit_Course->setText(QString::number(value - value + inputSpinBox_Intercept_Course_BE->value()));
 }
 //! [2]
 
 //! [3]
 void CalculatorForm::on_inputSpinBox_Bandit_Bear_BE_valueChanged(int value)
 {
-    Interceptor_Bandit_Course->setText(QString::number(value - value + inputSpinBox_Bandit_Bear_BE->value()));
+    bullseye_to_bandit_radial = value;
+    Interceptor_Radial_counting ();
+    Angle_Interceptor_Bandit_counting ();
+
+    Interceptor_Bandit_Course->setText(QString::number(Angle_Interceptor_Bandit_counting ()));
+
+//    Interceptor_Bandit_Course->setText(QString::number(value - value + inputSpinBox_Bandit_Bear_BE->value()));
 }
 //! [3]
 
 //! [4]
 void CalculatorForm::on_inputSpinBox_Bandit_Dist_BE_valueChanged(int value)
 {
-    Interceptor_Bandit_Distance->setText(QString::number(value - value + inputSpinBox_Bandit_Dist_BE->value()));
+    bandit_to_bullseye_distance = value;
+    Interceptor_Bandit_Distance->setText(QString::number(Distance_Interceptor_Bandit_counting ()));
+//    Interceptor_Bandit_Distance->setText(QString::number(value - value + inputSpinBox_Bandit_Dist_BE->value()));
 }
 //! [4]
 

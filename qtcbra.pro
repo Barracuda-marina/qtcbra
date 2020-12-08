@@ -3,7 +3,8 @@ QT += widgets
 
 HEADERS = calculatorform.h \
     mathematic.h
-SOURCES = calculatorform.cpp main.cpp
+SOURCES = calculatorform.cpp main.cpp \
+    mathematic.cpp
 FORMS = calculatorform.ui
 #! [0]
 
