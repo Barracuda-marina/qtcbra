@@ -391,19 +391,6 @@
         <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignCenter|Qt::AlignHCenter|Qt::AlignHorizontal_Mask|Qt::AlignJustify|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_Calculate">
-       <property name="geometry">
-        <rect>
-         <x>410</x>
-         <y>360</y>
-         <width>151</width>
-         <height>51</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>CALCULATE</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_13">
        <property name="geometry">
         <rect>
@@ -430,18 +417,42 @@
         <string>BANDIT</string>
        </property>
       </widget>
+      <widget class="QPushButton" name="pushButton_Quit">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>410</y>
+         <width>151</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>QUIT</string>
+       </property>
+      </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_Quit">
+     <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>600</x>
-        <y>490</y>
-        <width>151</width>
-        <height>51</height>
+        <x>30</x>
+        <y>550</y>
+        <width>721</width>
+        <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
       <property name="text">
-       <string>QUIT</string>
+       <string>Copyright (C) 2017 The Qt Company Ltd. and  2020 Barracuda-marina </string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
      </widget>
     </widget>

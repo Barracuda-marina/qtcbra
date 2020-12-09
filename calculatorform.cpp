@@ -46,6 +46,14 @@
 **
 ** $QT_END_LICENSE$
 **
+****************************************************************************
+**                                                                        **
+**   Project qtcbra - calculatorform.cpp                                  **
+**      Qt creator ver. 5.15  variant of interceptor - bandit course -    **
+**      distance - altitude computation from AWACS or EWR data            **
+**      for DCS World                                                     **
+**                                      Barracuda-marina 2020             **
+**                                                                        **
 ****************************************************************************/
 
 #include "calculatorform.h"
@@ -64,7 +72,8 @@ CalculatorForm::CalculatorForm(QWidget *parent)
 //! [1]
 void CalculatorForm::on_inputSpinBox_Intercept_Dist_BE_valueChanged(int value) //changed (value + inputSpinBox_Intercept_Dist_BE->value())) on (value - value + inputSpinBox_Intercept_Dist_BE->value()))
 {
-    Interceptor_Bandit_Distance->setText(QString::number(value - value + inputSpinBox_Intercept_Dist_BE->value()));
+    interceptor_to_bullseye_distance = value;
+    //Interceptor_Bandit_Distance->setText(QString::number(value - value + inputSpinBox_Intercept_Dist_BE->value()));
 }
 //! [1]
 
@@ -84,8 +93,11 @@ void CalculatorForm::on_inputSpinBox_Bandit_Bear_BE_valueChanged(int value)
     bullseye_to_bandit_radial = value;
     Interceptor_Radial_counting ();
     Angle_Interceptor_Bandit_counting ();
+    beta_angle_counting ();
+    alfa_angle_counting ();
+    Bandit_azimuth_counting ();
 
-    Interceptor_Bandit_Course->setText(QString::number(Angle_Interceptor_Bandit_counting ()));
+    Interceptor_Bandit_Course->setText(QString::number(Bandit_azimuth_counting ()));
 
 //    Interceptor_Bandit_Course->setText(QString::number(value - value + inputSpinBox_Bandit_Bear_BE->value()));
 }
@@ -95,6 +107,7 @@ void CalculatorForm::on_inputSpinBox_Bandit_Bear_BE_valueChanged(int value)
 void CalculatorForm::on_inputSpinBox_Bandit_Dist_BE_valueChanged(int value)
 {
     bandit_to_bullseye_distance = value;
+    Angle_Interceptor_Bandit_counting ();
     Interceptor_Bandit_Distance->setText(QString::number(Distance_Interceptor_Bandit_counting ()));
 //    Interceptor_Bandit_Distance->setText(QString::number(value - value + inputSpinBox_Bandit_Dist_BE->value()));
 }

@@ -14,3 +14,6 @@ INSTALLS += target
 RESOURCES += \
     BRA.qrc
 
+DISTFILES += \
+    license.txt
+

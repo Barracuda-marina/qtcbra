@@ -48,7 +48,7 @@
 **
 ****************************************************************************
 **                                                                        **
-**   Project qtcbra - maih.cpp                                            **
+**   Project qtcbra - main.cpp                                            **
 **      Qt creator ver. 5.15  variant of interceptor - bandit course -    **
 **      distance - altitude computation from AWACS or EWR data            **
 **      for DCS World                                                     **
